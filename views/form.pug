@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  form(method='POST', action='/new', id='new')
+    h2 Create a new submission!
+    label(for='username') Username:
+    input(type='text', id='username', name='username')
+    label(for='msg') Message: 
+    input(type='text', id='msg', name='msg')
+    button(form='new') submit
