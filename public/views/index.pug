@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h1= title
+  a(href='/new') Post a new message!
+  each message in messages
+    h3 Message
+    ul
+      li #[strong Username]: #{message.user}
+      li #[strong Content]: #{message.text}
+      li #[strong Time Posted]: #{message.added} 

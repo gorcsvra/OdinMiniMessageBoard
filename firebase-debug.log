@@ -1,0 +1,75 @@
+[debug] [2023-12-02T23:38:57.167Z] ----------------------------------------------------------------------
+[debug] [2023-12-02T23:38:57.194Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Asus\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2023-12-02T23:38:57.196Z] CLI Version:   12.9.1
+[debug] [2023-12-02T23:38:57.198Z] Platform:      win32
+[debug] [2023-12-02T23:38:57.198Z] Node Version:  v20.9.0
+[debug] [2023-12-02T23:38:57.199Z] Time:          Sun Dec 03 2023 00:38:57 GMT+0100 (közép-európai téli idő)
+[debug] [2023-12-02T23:38:57.200Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-12-02T23:38:57.653Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-12-02T23:38:57.654Z] > authorizing via signed-in user (gorcsvera@gmail.com)
+[debug] [2023-12-02T23:38:57.655Z] [iam] checking project odinminimessageboard for permissions ["firebase.projects.get"]
+[debug] [2023-12-02T23:38:57.658Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/odinminimessageboard:testIamPermissions [none]
+[debug] [2023-12-02T23:38:57.659Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/odinminimessageboard:testIamPermissions x-goog-quota-user=projects/odinminimessageboard
+[debug] [2023-12-02T23:38:57.659Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/odinminimessageboard:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-12-02T23:38:58.748Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/odinminimessageboard:testIamPermissions 200
+[debug] [2023-12-02T23:38:58.749Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/odinminimessageboard:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-12-02T23:38:58.751Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/odinminimessageboard [none]
+[debug] [2023-12-02T23:38:59.115Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/odinminimessageboard 200
+[debug] [2023-12-02T23:38:59.115Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/odinminimessageboard {"projectId":"odinminimessageboard","projectNumber":"238783773332","displayName":"OdinMiniMessageBoard","name":"projects/odinminimessageboard","resources":{"hostingSite":"odinminimessageboard"},"state":"ACTIVE","etag":"1_89bcdf7e-3fbc-4fae-969b-55f0f1b6d938"}
+[info] 
+[info] === Serving from 'C:\Users\Asus\OdinMiniMessageBoard'...
+[info] 
+[debug] [2023-12-02T23:38:59.135Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/odinminimessageboard/sites 
+[debug] [2023-12-02T23:39:00.517Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/odinminimessageboard/sites 200
+[debug] [2023-12-02T23:39:00.518Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/odinminimessageboard/sites {"sites":[{"name":"projects/odinminimessageboard/sites/odinminimessageboard","defaultUrl":"https://odinminimessageboard.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2023-12-02T23:39:00.518Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/odinminimessageboard/webApps/-/config [none]
+[debug] [2023-12-02T23:39:01.023Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/odinminimessageboard/webApps/-/config 200
+[debug] [2023-12-02T23:39:01.023Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/odinminimessageboard/webApps/-/config {"projectId":"odinminimessageboard","storageBucket":"odinminimessageboard.appspot.com","apiKey":"AIzaSyDaPuZ-CQl9rZnznJaYmM4tpKUrrIY40wQ","authDomain":"odinminimessageboard.firebaseapp.com","messagingSenderId":"238783773332"}
+[debug] [2023-12-02T23:39:01.032Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/odinminimessageboard [none]
+[debug] [2023-12-02T23:39:01.278Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/odinminimessageboard 200
+[debug] [2023-12-02T23:39:01.279Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/odinminimessageboard {"projectId":"odinminimessageboard","projectNumber":"238783773332","displayName":"OdinMiniMessageBoard","name":"projects/odinminimessageboard","resources":{"hostingSite":"odinminimessageboard"},"state":"ACTIVE","etag":"1_89bcdf7e-3fbc-4fae-969b-55f0f1b6d938"}
+[info] i  hosting[odinminimessageboard]: Serving hosting files from: public {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mpublic\u001b[22m"}}
+[info] +  hosting[odinminimessageboard]: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
+[info] i  hosting: ::1 - - [02/Dec/2023:23:39:10 +0000] "GET / HTTP/1.1" 404 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [02/Dec/2023:23:39:10 +0000] \"GET / HTTP/1.1\" 404 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36\""}}
+[info] i  hosting: ::1 - - [02/Dec/2023:23:39:13 +0000] "GET /favicon.ico HTTP/1.1" 404 - "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [02/Dec/2023:23:39:13 +0000] \"GET /favicon.ico HTTP/1.1\" 404 - \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36\""}}
+[debug] [2023-12-02T23:49:32.046Z] ----------------------------------------------------------------------
+[debug] [2023-12-02T23:49:32.067Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Asus\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2023-12-02T23:49:32.068Z] CLI Version:   12.9.1
+[debug] [2023-12-02T23:49:32.068Z] Platform:      win32
+[debug] [2023-12-02T23:49:32.068Z] Node Version:  v20.9.0
+[debug] [2023-12-02T23:49:32.069Z] Time:          Sun Dec 03 2023 00:49:32 GMT+0100 (közép-európai téli idő)
+[debug] [2023-12-02T23:49:32.069Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-12-02T23:49:32.387Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-12-02T23:49:32.388Z] > authorizing via signed-in user (gorcsvera@gmail.com)
+[debug] [2023-12-02T23:49:32.389Z] [iam] checking project odinminimessageboard for permissions ["firebase.projects.get"]
+[debug] [2023-12-02T23:49:32.391Z] > refreshing access token with scopes: []
+[debug] [2023-12-02T23:49:32.395Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-12-02T23:49:32.396Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-12-02T23:49:32.640Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2023-12-02T23:49:32.641Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-12-02T23:49:32.656Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/odinminimessageboard:testIamPermissions [none]
+[debug] [2023-12-02T23:49:32.656Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/odinminimessageboard:testIamPermissions x-goog-quota-user=projects/odinminimessageboard
+[debug] [2023-12-02T23:49:32.656Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/odinminimessageboard:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-12-02T23:49:33.558Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/odinminimessageboard:testIamPermissions 200
+[debug] [2023-12-02T23:49:33.558Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/odinminimessageboard:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-12-02T23:49:33.559Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/odinminimessageboard [none]
+[debug] [2023-12-02T23:49:33.925Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/odinminimessageboard 200
+[debug] [2023-12-02T23:49:33.925Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/odinminimessageboard {"projectId":"odinminimessageboard","projectNumber":"238783773332","displayName":"OdinMiniMessageBoard","name":"projects/odinminimessageboard","resources":{"hostingSite":"odinminimessageboard"},"state":"ACTIVE","etag":"1_89bcdf7e-3fbc-4fae-969b-55f0f1b6d938"}
+[info] 
+[info] === Serving from 'C:\Users\Asus\OdinMiniMessageBoard'...
+[info] 
+[debug] [2023-12-02T23:49:33.975Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/odinminimessageboard/sites 
+[debug] [2023-12-02T23:49:35.117Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/odinminimessageboard/sites 200
+[debug] [2023-12-02T23:49:35.117Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/odinminimessageboard/sites {"sites":[{"name":"projects/odinminimessageboard/sites/odinminimessageboard","defaultUrl":"https://odinminimessageboard.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2023-12-02T23:49:35.118Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/odinminimessageboard/webApps/-/config [none]
+[debug] [2023-12-02T23:49:35.665Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/odinminimessageboard/webApps/-/config 200
+[debug] [2023-12-02T23:49:35.665Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/odinminimessageboard/webApps/-/config {"projectId":"odinminimessageboard","storageBucket":"odinminimessageboard.appspot.com","apiKey":"AIzaSyDaPuZ-CQl9rZnznJaYmM4tpKUrrIY40wQ","authDomain":"odinminimessageboard.firebaseapp.com","messagingSenderId":"238783773332"}
+[debug] [2023-12-02T23:49:35.704Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/odinminimessageboard [none]
+[debug] [2023-12-02T23:49:35.914Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/odinminimessageboard 200
+[debug] [2023-12-02T23:49:35.914Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/odinminimessageboard {"projectId":"odinminimessageboard","projectNumber":"238783773332","displayName":"OdinMiniMessageBoard","name":"projects/odinminimessageboard","resources":{"hostingSite":"odinminimessageboard"},"state":"ACTIVE","etag":"1_89bcdf7e-3fbc-4fae-969b-55f0f1b6d938"}
+[info] i  hosting[odinminimessageboard]: Serving hosting files from: public {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mpublic\u001b[22m"}}
+[info] +  hosting[odinminimessageboard]: Local server: http://localhost:5002 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5002\u001b[22m\u001b[24m"}}
+[info] i  hosting: ::1 - - [02/Dec/2023:23:49:43 +0000] "GET / HTTP/1.1" 404 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [02/Dec/2023:23:49:43 +0000] \"GET / HTTP/1.1\" 404 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36\""}}
+[info] i  hosting: ::1 - - [02/Dec/2023:23:49:43 +0000] "GET /favicon.ico HTTP/1.1" 404 - "http://localhost:5002/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [02/Dec/2023:23:49:43 +0000] \"GET /favicon.ico HTTP/1.1\" 404 - \"http://localhost:5002/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36\""}}
